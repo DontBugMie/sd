@@ -1,0 +1,161 @@
+*, 
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    box-sizing: border-box;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+/*map section*/
+
+.mapSection{
+    height:170px;
+    overflow: hidden;
+}
+
+
+/* speed button section*/
+
+.speedBtnSection{
+    /* height: 170px; */
+    background-color: wheat;
+    overflow-x: hidden;
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.btn{
+    height: 140px;
+    width: 90%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    /* transform: translateX(0%); */
+    /* background-color: hotpink; */
+
+}
+.speedBtn{
+    /* width: 160%; */
+    position: relative;
+}
+
+.arrow{
+    margin: 2%;
+
+}
+
+.leftArrow{
+    transform:rotate(180deg);
+    height: 25%;
+}
+
+.speedBtnWalk{
+    border: solid 2px rgb(22, 172, 22);
+    border-radius: 50px;
+    background-color: rgb(1, 158, 1);
+    height: 50%;
+    width: 200%;
+    left: 2%;
+    z-index: 4;
+}
+.speedBtn h1{
+    transform: translateY(100%);
+}
+
+.speedBtnPlus{
+    background-color: rgb(46, 207, 14);
+    border: solid 2px rgb(22, 172, 22);
+    border-radius: 0 50px 50px 0;
+    left: -8%;
+    height: 50%;
+    width: 100%;
+}
+
+.rightArrow{
+    height: 25%;
+}
+
+
+/*Overall section*/
+
+.overallSection{
+    background-color: rgb(207, 24, 116);
+    /* height: 160%; */
+    
+}
+
+.overallTitle{
+    background-color: indianred;
+}
+
+.speedSummary{
+    background-color: khaki;
+    display: flex;
+    height: 110px;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.walkContainer{
+    background-color: rgb(240, 140, 202);
+    margin:2px;
+}
+
+.walkCounter{
+    background-color: rgb(23, 168, 18);
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.walkTimer{
+    background-color: rgb(245, 67, 43);
+    font-size: 2.5rem;
+}
+
+.speedTimerUnits{
+    font-size: 1rem;
+}
+
+.speedPace{
+    font-size: 2rem;
+    /* font-weight: bo; */
+}
+
+.totalTime{
+    font-size: 40px;
+    font-weight: 500;
+    text-align: right;
+    padding-right: 5%;
+}
+
+.totalTimeUnits{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.totalTimeTitle{
+    font-size: 20px;
+    font-weight: 600;
+}
